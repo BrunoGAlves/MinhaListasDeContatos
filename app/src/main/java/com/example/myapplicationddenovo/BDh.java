@@ -59,7 +59,7 @@ public class BDh extends SQLiteOpenHelper{
     public Contato addContato(Contato contato) {
         SQLiteDatabase bd = getWritableDatabase();
         ContentValues values = new ContentValues();
-        values.put(ID, contato.getId());
+        values.put(NOME,contato.getNome());
         values.put(NUMERO, contato.getNumero());
         values.put(EMAIL, contato.getEmail());
         values.put(EMPRESA, contato.getEmpresa());
